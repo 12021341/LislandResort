@@ -1,0 +1,1220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Lisland Resort</title>
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    
+    <link rel="stylesheet/less" type="text/css" href="style.less" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	
+    <script	src="js/bootstrap.min.js" type="text/javascript" ></script>
+    
+    <script	src="js/jquery.smint.js" type="text/javascript" ></script>
+    
+    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easy-ticker.js"></script>
+    
+    <script src="less.js" type="text/javascript"></script>
+    
+    <script src="js/isotop.js"></script>
+
+	<script src="js/jquery.colorbox.js"></script>
+
+<script type="text/javascript">
+
+
+	$('.collapse').collapse();
+	
+	
+	
+	$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+
+$(document).ready( function() {
+    $('.subMenu').smint({
+    	'scrollSpeed' : 1000
+    });
+	
+	var dd = $('.vticker').easyTicker({
+		direction: 'up',
+		easing: 'easeInOutBack',
+		speed: 'slow',
+		interval: 4000,
+		height: 'auto',
+		visible: 1,
+		mousePause: 0,
+		controls: {
+			up: '.up',
+			down: '.down',
+			toggle: '.toggle',
+			stopText: 'Stop !!!'
+		}
+	}).data('easyTicker');
+	
+});
+
+	$(function () { $('.tooltip-hide').tooltip('hide');});
+	
+	
+	
+$(document).ready(function(){
+	// Portfolio
+				
+				
+				var $container = $('.portfolioContainer');
+				$container.isotope({
+					filter: '*',
+					animationOptions: {
+						duration: 750,
+						easing: 'linear',
+						queue: false
+					}
+				});
+			 
+				$('.portfolioFilter a').click(function(){
+					$('.portfolioFilter .current').removeClass('current');
+					$(this).addClass('current');
+			 
+					var selector = $(this).attr('data-filter');
+					$container.isotope({
+						filter: selector,
+						animationOptions: {
+							duration: 750,
+							easing: 'linear',
+							queue: false
+						}
+					 });
+					 return false;
+			
+	}); 
+	
+	$(".group2").colorbox({rel:'group2', transition:"fade"});
+	
+ });
+ 
+ $('.carousel').carousel();
+
+</script>
+
+</head>
+
+<body>
+
+<div class="wrap ">
+	<div class="section sTop">
+		<div class="top-container">
+    	
+            <div class="container">
+                
+                <div class="large-logo">
+                    <a href="#"><img src="img/logo-large.png" alt="logo" /></a>
+                </div>
+                
+                <div class="vticker">
+                    <ul>
+                        <li>LISLAND RESORT</li>
+                      <!--   <li>GREAT PLACE TO ENJOY</li>
+                        <li>EAT SWIM & RELAX</li> -->
+                    </ul>
+                </div>
+                
+                <!--<a href="#sTop" class="click-down"><i class="fa fa-chevron-circle-down"></i></a>-->
+              <div class="" >  
+                <ul class="nav nav-pills nav-justified">
+                  <li class="active"><a href="#sTop"><i class="fa fa-leaf"></i>About</a></li>
+                  <li><a href="#s2"><i class="fa fa-key"></i>Rooms</a></li>
+                  <li><a href="#s3"><i class="fa fa-home"></i>Facilities</a></li>
+                  <li><a href="#s3"><i class="fa fa-picture-o"></i>Gallery</a></li>
+                  <li><a href="#s3"><i class="fa fa-spoon"></i>Dine</a></li>
+                  <li><a href="#s3"><i class="fa fa-phone"></i>Contact</a></li>
+                  <li><a href="#s3"><i class="fa fa-location-arrow"></i>Location</a></li>
+                  <li><a href="#s3"><i class="fa fa-suitcase"></i>Reserve</a></li>
+                </ul>
+              </div>  
+                
+            </div>
+            
+        </div>
+        
+	</div><!-- /top-container -->
+
+	<div class="subMenu" >
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-2 th-logo">
+                	<a href="#sTop">
+                    	<img src="img/cover/lisland.png" alt="logo" />
+                    </a>
+                </div>
+                <div class="col-md-10">
+                
+                        <!--<nav class="navbar navbar-default" role="navigation">
+                          <div class="container-fluid">
+                            <div class="navbar-header">
+                              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                              <a class="navbar-brand" href="#">Brand</a>
+                            </div>
+                        
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav inner pull-right">
+                                <li><a href="#about" class="subNavBtn">About Us</a></li>
+                                <li><a href="#s2" class="subNavBtn">Our Work</a></li>
+                                <li><a href="#s3" class="subNavBtn">Services</a></li>
+                                <li><a href="#s4" class="subNavBtn">Testimonials</a></li>
+                                <li><a href="#s5" class="subNavBtn">Pricing</a></li>
+                                <li><a href="#s6" class="subNavBtn">Blog</a></li>
+                                <li><a href="#s7" class="subNavBtn">Contact</a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </nav>-->
+                
+                    <div class="inner pull-right">
+                        <a href="#about" class="subNavBtn">About</a> 
+                        <a href="#s2" class="subNavBtn">Rooms</a>
+                        <a href="#s3" class="subNavBtn">Facilities</a>
+                        <a href="#s4" class="subNavBtn">Gallery</a>
+                        <a href="#s5" class="subNavBtn">Dine</a>
+                        <a href="#s6" class="subNavBtn">Contact</a>
+                        <a href="#s7" class="subNavBtn">Location</a>
+                        <a href="#s10" class="subNavBtn">Reserve</a>
+                    </div>
+            	</div>
+            </div><!-- row -->
+        </div>
+	</div>
+
+	<div class="section about">
+		<div class="inner ">
+			<div class="about-artical">
+            	<h2>Lisland Resort</h2>
+              <hr>
+                <center><h4>Lisland Rainforest Resort is an environmental resort that overlooks the Mc Arthur Highway.
+                 <br> With architectural themes of being a forest and resort.<br>
+The resort is composed of a luxury rooms <br>with international dining, 
+entertainment and gaming facilities<br> that would surely
+live up to your dream destination.</h4></center>
+                
+              <!--   <div class="creative-minds">
+                	<div class="row-cm">
+                        <div class="col-cm">
+                            <figure class="cm-item">
+                                <img alt="" src="img/c-1.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <h4 class="cm-title" data-animate="fadeInDown" style="">John Doe</h4>
+                            <p class="cm-descr">Graphic Designer</p>
+                        </div>
+                        <div class="col-cm">
+                            <figure class="cm-item">
+                                <img alt="" src="img/c-2.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <h4 class="cm-title" data-animate="fadeInDown" style="">John Doe</h4>
+                            <p class="cm-descr">Graphic Designer</p>
+                        </div>
+                        <div class="col-cm">
+                            <figure class="cm-item">
+                                <img alt="" src="img/c-3.jpg">
+                                <figcaption></figcaption>
+                            </figure>
+                            <h4 class="cm-title" data-animate="fadeInDown" style="">John Doe</h4>
+                            <p class="cm-descr">Graphic Designer</p>
+                        </div>
+                    </div>
+                </div><!-- /creative-minds -->
+
+                <h3>Like & Share us!</h3>
+                
+                <div id="social-contect" class="social-contect">
+                	<button type="button" class="btn btn-primary btn-lg"><a href="http://www.facebook.com/lislandrainforestresort" class="tooltip-hide" data-placement="top" data-toggle="tooltip" type="button" data-original-title="Facebook"><i class="fa fa-facebook-square"> Facebook</i></a></button>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#" class="tooltip-hide" data-placement="top" data-toggle="tooltip" type="button" data-original-title="Twitter"><i class="fa fa-twitter-square"> Twitter</i></a></button>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#" class="tooltip-hide" data-placement="top" data-toggle="tooltip" type="button" data-original-title="Linkedin"><i class="fa fa-pinterest-square"> Pinterest</i></a></button>
+                    <button type="button" class="btn btn-primary btn-lg"><a href="#" class="tooltip-hide" data-placement="top" data-toggle="tooltip" type="button" data-original-title="Google plus"><i class="fa fa-google-plus-square"> Google+</i></a></button>
+                    
+                </div>
+                
+            </div><!-- /about-artical -->
+		</div>
+  </div>
+    
+   
+       <div class="transparent-bg">
+                <div class="bcg-room">
+
+                    <div class="bcg-bg bcg-bg-blk1">
+                      
+              <h1>An indelible experience</h1>
+                <!-- <h6>Mae West</h6> -->
+            </div>
+        </div>
+    </div><!-- /transparent-bg -->
+        
+ <!--        <div class="about-f">
+        	
+            <div class="container">
+        	
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <div class="about-us-f">
+                            <h3>About Us</h3>
+                            <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you.</p>
+                            <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    	<div class="about-us-f">
+                        		<h3>Our Goals</h3>
+                                
+                                <div class="panel-group" id="accordion">
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href=".collapseOne">
+                                          IMPRESSIVE TEMPLATE
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="" class="collapseOne panel-collapse collapse in">
+                                      <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href=".collapseTwo">
+                                          TONS OF FEATURES
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="" class="collapseTwo panel-collapse collapse">
+                                      <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href=".collapseThree">
+                                          CREATIVE LAYOUT
+                                        </a>
+                                      </h4>
+                                    </div>
+                                    <div id="" class="collapseThree panel-collapse collapse">
+                                      <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            
+                        </div> /.about-us-f -
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    	<div class="about-us-f">
+                        		<h3>Our Goals</h3>
+                        
+                        		<span class="sr-only">HTML <span class="pull-right">40%</span></span>
+                        		<div class="progress top100">
+                                  <div class="progress-bar progress-bar-pink" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                  </div>
+                                </div>
+                                
+                                <span class="sr-only">Graphic <span class="pull-right">20%</span></span>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-pink" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                  </div>
+                                </div>
+                                <span class="sr-only">JS <span class="pull-right">60%</span></span>
+                                <div class="progress">
+                                  <div class="progress-bar progress-bar-pink" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                  </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div><!-- /container
+            
+        </div><!-- /about-f -->
+        
+
+
+
+  <div class="section s2">
+    <div class="inner">
+          <div class="blog">
+              <div class="container">
+                  <div class="blog-header">
+                            
+                            <h1>ROOMS</h1>
+                            <p>Amanyara offers 4 cozy rooms for your relaxation and comfort.
+                                  All rooms have a combined bedroom and living room separated from the bathroom. All rooms are fully air-condition joined by a writing desk, reading chair and an entertainment unit with flat-screen TV and CD/DVD player. The spacious bathroom features an elegant shower. Dramatic terraces shaded by the trees. 
+                            </p>
+                            
+                        </div><!-- /blog-header -->
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                
+                                <div class="slide">
+                                    <div class="portfolio-img view view-first">
+                                        
+                                        <img src="img/cover/room1.jpg" class="img-responsive"  alt="Responsive image" />
+                                        
+                                            
+                                                <div class="isotope-item-dtls">
+                                                  <center>
+                                                    <h3>STANDARD ROOM</h3>
+                                                    <h4> PHP 2,200.00 </h4>
+                                                    <p>Good for 2 persons </p>
+                                                    
+                                                        <div class="blue-btn">
+                                                          <a class="first-link" href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                          <a href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                        </div>
+                                                      </center>
+                                                </div><!--/isotope-item-dtls-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                
+                                <div class="slide">
+                                    <div class="portfolio-img view view-first">
+                                        
+                                        <img src="img/cover/room2.jpg" class="img-responsive"  alt="Responsive image" />
+                                        
+                                                <div class="isotope-item-dtls">
+                                                  <center>
+                                                    <h3>SUPERIOR ROOM</h3>
+                                                    <h4> PHP 2,800.00 </h4>
+                                                    <p>Good for 2 persons</p>
+                                                    
+                                                      <div class="blue-btn">
+                                                          <a class="first-link" href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                          <a href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                        </div>
+                                                    </center>
+                                                </div><!--/isotope-item-dtls-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                
+                                <div class="slide">
+                                    <div class="portfolio-img view view-first">
+                                        
+                                        <img src="img/cover/room3.jpg" class="img-responsive"  alt="Responsive image" />
+                                        
+                                            
+                                                <div class="isotope-item-dtls">
+                                                  <center>
+                                                    <h3>FAMILY ROOM</h3>
+                                                    <h4>PHP 3,500.00</h4>
+                                                    <p>Good for 3-6 persons</p>
+                                                      
+                                                        
+                                                        <div class="blue-btn">
+                                                          <a class="first-link" href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                          <a href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                        </div>
+                                                    </center>
+                                                </div><!--/isotope-item-dtls-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                
+                                <div class="slide">
+                                    <div class="portfolio-img view view-first">
+                                        
+                                        <img src="img/cover/room5.jpg" class="img-responsive"  alt="Responsive image" />
+                                        
+                                            
+                                                <div class="isotope-item-dtls">
+                                                  <center>
+                                                    <h3>DELUXE ROOM</h3>
+                                                    <h4>PHP 3,800.00</h4>
+                                                    <p>Good for 2 person</p>
+                                                    
+                                                        <div class="blue-btn">
+                                                          <a class="first-link" href="blog.html">
+                                                            BOOK NOW
+                                                          </a>
+                                                          <a href="blog.html">
+                                                           BOOK NOW
+                                                          </a>
+                                                        </div>
+                                                      </center>
+                                                </div><!--/isotope-item-dtls-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                
+                                <div class="slide">
+                                    <div class="portfolio-img view view-first">
+                                        
+                                        <img src="img/cover/room4.jpg" class="img-responsive"  alt="Responsive image" />
+                                        
+                                                <div class="isotope-item-dtls">
+                                                    <h3>Item I</h3>
+                                                    <p>A wonderful serenity has taken possession of my entire soul</p>
+                                                    
+                                                      <div class="blue-btn">
+                                                          <a class="first-link" href="blog.html">
+                                                            read more
+                                                          </a>
+                                                          <a href="blog.html">
+                                                            read more
+                                                          </a>
+                                                        </div>
+                                                </div><!--/isotope-item-dtls-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                
+                                <div class="slide">
+                                    <div class="portfolio-img view view-first">
+                                        
+                                        <img src="img/cover/room2.jpg" class="img-responsive"  alt="Responsive image" />
+                                        
+                                            
+                                                <div class="isotope-item-dtls">
+                                                    <h3>Item I</h3>
+                                                    <p>A wonderful serenity has taken possession of my entire soul </p>
+                                                      
+                                                        
+                                                        <div class="blue-btn">
+                                                          <a class="first-link" href="blog.html">
+                                                            read more
+                                                          </a>
+                                                          <a href="blog.html">
+                                                            read more
+                                                          </a>
+                                                        </div>
+                                                </div><!--/isotope-item-dtls-->
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        
+                
+                </div><!-- container -->
+                
+            </div><!-- /blog -->
+        </div>
+    </div>
+
+           <div class="transparent-bg">
+                <div class="bcg">
+                    <div class="bcg-bg bcg-bg-blk1">
+              <h1>Free your mind with breeze of the rainforest resort</h1>
+                <!-- <h6>M</h6>
+ -->            </div>
+        </div>
+    </div><!-- /transparent-bg -->
+
+	<div class="section s3">
+		<div class="inner">
+       <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">FACILITIES
+                <!--     <small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Project One -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/cover/swim1.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Swimming Pool</h3>
+                <!-- <h4>Subheading</h4> -->
+                <p> One of the highlight of this hotel is the large swimming pool surrounding the main 
+building like a bluish lagoon reflecting the silhouette of the trees. What a pleasure to
+take a dip in its cool waters! You can relax in deckchairs, listening only to the sound of 
+the birds that inhabit the little forest.</p>
+                <a class="btn btn-primary" href="#">View Swimming Pool <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Two -->
+        <div class="row">
+             <div class="col-md-5">
+                <h3>Bai Marin Restaurant</h3>
+              <!--   <h4>Subheading</h4> -->
+                <p> Dine amidst a rustic setting in bai marin restaurant. We serve filipino and 
+international cuisine, promotes healthy regional dishes like meat, vegetables, and fish. 
+Try our delicious bulalo, sisig, crispy shrimp, and others.</p>
+                <a class="btn btn-primary" href="#">View Bai Marin Restaurant <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/cover/baimarin.jpg" alt="">
+                </a>
+            </div>
+         
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+        <!-- Project Four -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/cover/lakayakong.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Lakay Akong's Bar</h3>
+               <!--  <h4>Subheading</h4> -->
+                <p>What a better way it is to celebrate in Lakay Akong's Bar. Meet friends and
+enjoy the high life.</p>
+                <a class="btn btn-primary" href="#">View Lakay Akong's Bar <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Project Five -->
+        <div class="row">
+           <div class="col-md-5">
+                <h3>Cabanas</h3>
+            <!--     <h4>Subheading</h4> -->
+                <p> Lisland Rainforest Resort cabanas will offer you top comfort, cleanliness, privacy
+   parking and security at affordable room rates! With Lisland's well trained staff
+   offering top-class service you think you could only expect at pricey hotels.</p>
+                <a class="btn btn-primary" href="#">View Cabanas <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/cover/cabana.jpg" alt="">
+                </a>
+            </div>
+           
+        </div>
+        <!-- /.row -->
+
+          <hr>
+
+        <!-- Project Six -->
+        <div class="row">
+
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/cover/pavillion.jpg" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3>Urduja Pavillion</h3>
+               <!--  <h4>Subheading</h4> -->
+                <p>In case you wish to have a taste of entertainment fully you must go to the pavillion 
+place site, the heart of ball room dancing, group functions and other activities.</p>
+                <a class="btn btn-primary" href="#">View Urduja Pavillion <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+          <hr>
+
+             <!-- Project Seven -->
+        <div class="row">
+           <div class="col-md-5">
+                <h3>Conference Hall</h3>
+            <!--     <h4>Subheading</h4> -->
+                <p> The conference room offers a flexible space for meetings, receptions and 
+presentations and has fully integrated press conference facilities. Catering can be 
+provided either in the room for smaller meetings or larger events.</p>
+                <a class="btn btn-primary" href="#">View Conference Hall <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+            <div class="col-md-7">
+                <a href="#">
+                    <img class="img-responsive" src="img/cover/conference.jpg" alt="">
+                </a>
+            </div>
+           
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+<!--         <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <!-- /.row -->
+     </div>
+		</div>
+	</div>
+
+
+   <div class="transparent-bg">
+                <div class="bcg-flower">
+                    <div class="bcg-bg bcg-bg-blk1">
+              <h1>"Trees that are slow to grow bear the best fruit"</h1>
+                <h6>Maliore</h6>
+            </div>
+        </div>
+    </div><!-- /transparent-bg -->
+
+
+<div class="section s4">
+    <div class="inner">
+              <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header"><center>Gallery</center>
+                 <!--    <small>Secondary Text</small> -->
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+            <div class="col-md-3 portfolio-item">
+                <a href="#">
+                    <img class="img-responsive" src="http://placehold.it/750x450" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+</div>  
+</div>
+
+    <div class="transparent-bg">
+                    <div class="bcg-bread">
+
+                        <div class="bcg-bg bcg-bg-blk1">
+                          
+                  <h1>"Indulge your tastebuds"</h1>
+                    <!-- <h6>Mae West</h6> -->
+                </div>
+            </div>
+        </div><!-- /transparent-bg -->
+
+  <div class="section s3">
+    <div class="inner">
+      <div class="pricing">
+              <div class="container">
+                    <div class="pricing-header">
+                        <h1>DINE</h1>
+                        <p>Dine amidst a rustic setting in bai marin restaurant. We serve filipino and 
+international cuisine, promotes healthy regional dishes like meat, vegetables, and fish. 
+Try our delicious bulalo, sisig, crispy shrimp, and others.</p>
+                    </div>
+            
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Bai Marin Restaurant
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src="img/cover/pata.jpg" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>Cusine</h3>
+                <p>Our luxury Bai Marin offers not only keenly price lunch menu but also a la cart menu specially created by our chef including a variety of seasonal offerings. You can also enjoy unwind over a cup of coffee or another drink of your choice in the Lakay Akong Bar with the live entertainment every night.  
+</p>
+                <h3>Try our best-seller</h3>
+                <ul>
+                    <li>Pinakbet</li>
+                    <li>Crispy Pata</li>
+                    <li>Nilagang Baboy/Baka</li>
+                    <li>Bulalo</li>
+                </ul>
+                <hr>
+                <a class="btn btn-primary" href="#">View Menu <span class="glyphicon glyphicon-chevron-right"></span></a>
+                <a class="btn btn-primary" href="#">View Gallery <span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+      <div class="transparent-bg">
+                      <div class="bcg-mixer">
+                          <div class="bcg-bg bcg-bg-blk1">                 
+                    <h1>"We don't remember days, we remember moments"</h1>
+                      <h6>Cesare Pavase</h6>
+                  </div>
+              </div>
+          </div><!-- /transparent-bg -->
+
+	<div class="section s3">
+		<div class="inner">
+				<div class="container">
+                
+                	<div class="services">
+                    	
+                        <div class="services-tops">
+                        	
+                            <h2>EVENTS</h2>
+                            
+                            <p>     From a birthday celebration to a wedding reception any number of holiday 
+celebrations we can make your event memorable for a lifetime.</p>
+                        	
+                        </div><!-- /services-tops -->
+                        
+                        <div class="row">
+                        	
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            	<div class="services-box">
+                                	<i class="fa fa-cog"></i>
+                                    <h6>Birthday</h6>
+                                    
+                                    <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. </p>
+                                    
+                                </div><!-- /services-box -->
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            	<div class="services-box">
+                                	<i class="fa fa-coffee"></i>
+                                    <h6>Wedding</h6>
+                                    
+                                    <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. </p>
+                                    
+                                </div><!-- /services-box -->
+                            </div>
+                            
+                            <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            	<div class="services-box">
+                                	<i class="fa fa-comment-o"></i>
+                                    <h6>Christening</h6>
+                                    
+                                    <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. </p>
+                                </div><!-- /services-box -->
+                            </div>
+                        
+                        </div>
+                        
+                    </div><!-- /services -->
+                
+                </div>
+		</div>
+	</div>
+
+
+
+	<div class="section s4">
+		<div class="inner">
+			<div class="container">
+            	
+                <div class="testimonial">
+                	
+                    <h2>Testimonial</h2>
+                	
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                      </ol>
+                    
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <div class="carousel-caption">
+                                    
+                                    <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="carousel-caption">
+                                    
+                                    <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. </p>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="carousel-caption">
+                                    
+                                    <p>We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. We are team of creative photographers. We passionate with photography and other creative things. If you are looking professional photography theme with endless possibilities, you come in right place. This template consist of well-organized layers. Tons of features waiting for you. </p>
+                          </div>
+                        </div>
+                      </div>
+                    
+                    </div>
+                    
+                </div>
+            
+            </div>
+		</div>
+	</div>
+
+    <div class="section s6">
+		  <div class="inner">
+         
+            <div class="transparent-bg">
+                <div class="bcg">
+
+                    <div class="bcg-bg bcg-bg-blk">
+                    
+                   <div class="container">
+                                
+                                <div class="contact">
+                                    
+                                    <h1>Contact Us</h1>
+                                    
+                                    <div class="row">
+                                    	
+                                        <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                                    
+                                            <div class="contact-form">
+                                                <form class="form-horizontal">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Name</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+                                                              </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Email address</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                                              </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Subject</label>
+                                                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter subject">
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                            <div class="form-group">
+                                                                <label for="exampleInputEmail1">Massage</label>
+                                                                <textarea class="form-control" rows="3"></textarea>
+                                                              </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                    <div class="controls">
+                                                    <button type="button" class="btn btn-default btn-lg">Send</button>
+                                                    </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        
+                                        </div>
+                                        
+                                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                                        	
+                                            	<div class="address">
+                                                    <h3>Address:</h3>
+                                                    <i class="icons-marker icon-home"></i>
+                                                    <div class="contact-address">
+                                                        Mc Arthur Highway <br>
+                                                        Pangasinan, <br>
+                                                        Urdaneta.
+                                                    </div>
+                                                </div><!--End address-->
+                                                
+                                                <div class="address">
+                                                    <h3>Phones:</h3>
+                                                    <div class="phone">
+                                                        <i class="icon-volume-down"></i>
+                                                        <div class="contact-address">
+                                                            # (075) 568-2962, (075) 656-2736
+                                                        </div>
+                                                    </div>
+                                                    <div class="phone">
+                                                        <i class="icon-print"></i>
+                                                        <div class="contact-address">
+                                                            Fax: #(075) 568-2938 
+                                                        </div>
+                                                    </div>
+                                                </div><!--End address-->
+                                                
+                                                <div class="address">
+                                                    <h3>Email:</h3>
+                                                    <div class="phone">
+                                                        <i class="icon-envelope"></i>
+                                                        <div class="email">
+                                                            <a href="#">inquiries_lisland@yahoo.com</a>
+                                                        </div>
+                                                    </div>
+                                                </div><!--End address-->
+                                            
+                                        </div>
+                                        
+                                     </div><!-- /row -->   
+                                      
+                                        
+                                </div>
+                        
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+            </div><!-- /transparent-bg -->
+          </div><!-- section 6 -->
+
+
+           <div class="transparent-bg">
+                <div class="bcg-tree">
+                    <div class="bcg-bg bcg-bg-blk1">
+                       <h1>LOCATION</h1>      
+                  </div>
+              </div>
+          </div><!-- /transparent-bg -->
+                    
+                    <div class="section s7">
+                                   <div class="gmap map" id="map" data-center="Brugse Heirweg 37 Aartrijke Belgium" data-zoom="15">
+                                    <address>
+                                      <div> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.6798073552686!2d120.572339!3d15.978088999999988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33913fb31e2b6ab5%3A0x4ba1f848f8b5d826!2sLisland+Rainforest+Resort!5e0!3m2!1sen!2sph!4v1420958457430" width="100%" height="1000" frameborder="0" style="border:0"></iframe></div>
+                                    </address>
+                                  </div><!--End map-->
+                    </div>
+            
+
+        <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12"><center>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#about" class="scroll-link" data-id="about">About</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#services" class="scroll-link" data-id="about">Facilities</a>
+                        </li>
+                        <li class="footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href="#contact" class="scroll-link" data-id="about">Contact</a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted small">Copyright &copy; Lisland Resort 2015. All Rights Reserved</p>
+                  </center>
+                </div>
+            </div>
+        </div>
+    </footer>   
+    
+</body>
+</html>
